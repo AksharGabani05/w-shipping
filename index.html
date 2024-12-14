@@ -45,6 +45,8 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <!-- jQuery -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
 </head>
@@ -78,8 +80,8 @@
                         <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
                             <div class="top-menu">
                                 <ul>
-                                    <li><a href="customer-login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                                    <li><a href="customer-register.html"><i class="fa fa-unlock-alt"></i> Registration</a></li>
+                                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                                    <li><a href="register.html"><i class="fa fa-unlock-alt"></i> Registration</a></li>
                                 </ul>
                             </div>
                             <div class="language">
@@ -626,7 +628,7 @@
         </head>
         <body>
           <div class="container">
-            <h1>Our Products</h1>
+            <h1 style="padding-top: 20px;">Our Products</h1>
             <div class="products-grid" id="products-grid">
               <!-- Product cards will be dynamically inserted here -->
             </div>
@@ -681,7 +683,8 @@
                 <div class="product-details">
                   <h3 class="product-title">${product.name}</h3>
                   <p class="product-description">${product.description}</p>
-                  <span class="read-more" data-id="${product.id}">READ MORE</span>
+                  <span class="read-more" data-id="${product.id}">READ MORE </span>
+                  
                 </div>
                 <div class="corner"></div>
               `;
@@ -1096,8 +1099,8 @@ body {
             <div class="footer-bottom-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-6 wow fadeInLeft">Copyright © 2017 <span>Wrold shipping</span>. All Rights Reserved</div>
-                        <div class="col-12 col-lg-6 text-right wow fadeInRight">Design & Development By: <a href="http://web24service.com/" title="web24service" target="_blank">web24service</a></div>
+                        <div class="col-12 col-lg-6 wow fadeInLeft">Copyright © 2024 <span>OrbitLine Exim</span>. All Rights Reserved</div>
+                        <div class="col-12 col-lg-6 text-right wow fadeInRight">Design & Development By: <a href="http://gabaniakshar.pages.dev" title="web24service" target="_blank">Akshar Gabani</a></div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Orbitline Exim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="logo.png" alt="">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="email">Full Name</label>
+                    <input type="name" id="name" name="name" placeholder="Enter your Full Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Cunfirm Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Cunfirm password" required>
+                </div>
+                <button type="submit" class="login-btn">Register</button>
+            </form>
+            
+            <div class="signup-link">
+                <p>Don't have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    /* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f8f8f8, #ececec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-form img {
+    display: block;
+    max-width: 100%; /* Adjust the size of the logo */
+    margin: 0 auto 20px auto; /* Center the logo and add bottom margin */
+    object-fit: contain; /* Prevent the image from being distorted */
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Increased width for better visibility on large screens */
+}
+
+/* Login Form */
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: red;
+}
+
+/* Button Styling */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: red;
+}
+
+/* Forgot Password and Sign-Up Link */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: red;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color:red;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add some padding on small screens */
+    }
+
+    .login-container {
+        padding: 30px;
+        width: 90%; /* Make the form take up more width on smaller screens */
+    }
+
+    .login-form h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        padding: 10px; /* Adjust input padding for smaller screens */
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .forgot-password a, .signup-link a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+}
+
+</style>
