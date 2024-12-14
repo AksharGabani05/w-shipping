@@ -123,56 +123,36 @@
                     <!-- Main menu start -->
                     <nav class="mainmenu">
                         <ul id="navigation">
-                            <li class="nav-active"><a href="#">Home</a>
-                                <ul>
-                                    <li class="chaild-active"><a href="index">Home version 1</a></li>
-                                    <li><a href="home-version2">Home version 2</a></li>
-                                    <li><a href="box-style">Box Style</a></li>
-                                    <li><a href="rtl-version">RTL Version</a></li>
-                                </ul>
+                            <li class="nav-active"><a href="index.html">Home</a>
+                                
                             </li>
                             <li><a href="#">Services</a>
                                 <ul>
-                                    <li><a href="services">Service page</a></li>
-                                    <li><a href="air-single-service">Air Freight Shipping</a></li>
-                                    <li><a href="ocean-single-service">Ocean Freight Shipping</a></li>
-                                    <li><a href="car-single-service">Car Shipping</a></li>
+                                    <li><a href="services.html">Service page</a></li>
+                                    <li><a href="air.html">Air Freight Shipping</a></li>
+                                    <li><a href="ocean.html">Ocean Freight Shipping</a></li>
+                                    <li><a href="car.html">Car Shipping</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Shipping</a>
                                 <ul>
-                                    <li><a href="create-shipping">Create New Shipment</a></li>
-                                    <li><a href="current-shipment">Current Shipment list</a></li>
-                                    <li><a href="shipment-history">Shipment History</a></li>
+                                    <li><a href="create.html">Create New Shipment</a></li>
+                                    <li><a href="current.html">Current Shipment list</a></li>
+                                    <li><a href="shipment.html">Shipment History</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Tracking</a>
-                                <ul>
-                                    <li><a href="customer-login">Customer Login</a></li>
-                                    <li><a href="customer-register">Customer Register</a></li>
-                                    <li><a href="tracking">Tracking</a></li>
-                                    <li><a href="track-result">Your shipment progress</a></li>
-                                </ul>
-                            </li>
+                            
                             <li><a href="#">Blog</a>
-                                <ul>
-                                    <li><a href="blog-page">Blog left sidebar</a></li>
-                                    <li><a href="blog-another-page">Blog right sidebar</a></li>
-                                    <li><a href="single-blog">Single Blog</a></li>
-                                </ul>
+                                
                             </li>
                             <li><a href="#">pages</a>
                                 <ul>
-                                    <li><a href="about">About Us</a></li>
-                                    <li><a href="media">Media &amp; Publications</a></li>
-                                    <li><a href="freight-gallery">Freight Gallery</a></li>
-                                    <li><a href="image-gallery">Image Gallery</a></li>
-                                    <li><a href="typography">Typography</a></li>
-                                    <li><a href="button-accordion">Button &amp; Accordion</a></li>
-                                    <li><a href="community">Shipping Community</a></li>
-                                    <li><a href="404">Error 404</a></li>
-                                    <li><a href="sitemap">Site Map</a></li>
-                                    <li><a href="coming-soon">Coming Soon</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="media.html">Media &amp; Publications</a></li>
+                                    <li><a href="freight.html">Freight Gallery</a></li>
+                                    <li><a href="image.html">Image Gallery</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="shipping.html">Shipping Community</a></li>
                                 </ul>
                             </li>
                             <li><a href="Contact.html">Contact Us</a></li>
@@ -185,46 +165,37 @@
         </header>
         <!-- Slider Start -->
         <div class="homepage-video-wrapper">
-    <video autoplay muted loop playsinline class="background-video">
-        <source src="VN20241213_092527.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="video-overlay">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <h3 class="video-title">We are proud</h3>
-                    <h2 class="video-subtitle">To be always on demand</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="#" class="wshipping-button slide-btn">Contact Us</a>
+        <!-- Your browser does not support the video tag. -->
+ 
+        <div class="video-overlay">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h3 class="video-title">We are proud</h3>
+                        <h2 class="video-subtitle">To be always on demand</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="wshipping-button slide-btn">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        
 </div>
 
 <style>
     /* Wrapper styling */
-    .homepage-video-wrapper {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-    }
+.homepage-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("assets/mainback.jpg"); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+}
 
-    /* Background video styling */
-    .background-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1; /* Ensures the video stays behind the overlay */
-    }
-
-    /* Overlay styling */
-    .video-overlay {
+/* Overlay styling */
+.video-overlay {
     position: relative;
     z-index: 1;
     color: #fff;
@@ -247,43 +218,180 @@
     z-index: -1; /* Ensure it stays behind the overlay content */
 }
 
+.video-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
-    .video-title {
-        font-size: 36px;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
+.video-subtitle {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 
-    .video-subtitle {
-        font-size: 48px;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        font-weight: bold;
-    }
+.video-overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
-    .video-overlay p {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
+.wshipping-button {
+    display: inline-block;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #eb0028;
+    padding: 12px 30px;
+    border: none;
+    text-decoration: none;
+}
 
-    .wshipping-button {
-        display: inline-block;
-        color: #fff;
-        border-radius: 4px;
-        text-transform: uppercase;
-        font-size: 14px;
-        background-color: #eb0028;
-        padding: 12px 30px;
-        border: none;
-        text-decoration: none;
-    }
+.wshipping-button:hover {
+    background-color: #3b3b3b;
+}
 
-    .wshipping-button:hover {
-        background-color: #3b3b3b;
-    }
 </style>
 
         <!-- Slider End -->
+
+        <!-- about  -->
+
+        <section class="about-us">
+            <div class=" container about-container">
+                <div class="about-content">
+                    <h2>About Orbitline Exim</h2>
+                    <p>
+                        Orbitline Exim is a leading company specializing in the import and export of quality products worldwide. With years of experience in the global market, we have built a reputation for reliability and excellence in delivering high-quality goods to our clients. Our mission is to bridge the gap between local and international markets, providing seamless trade solutions that benefit all stakeholders involved.
+                    </p>
+                    <p>
+                        We pride ourselves on our dedicated team, cutting-edge technology, and customer-centric approach. Our passion for innovation and sustainability drives us to deliver the best products with outstanding service. Whether it's technology, consumer goods, or raw materials, Orbitline Exim is committed to shaping the future of global trade.
+                    </p>
+                    <a href="#contact" class="btn-about-us">Contact Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="logo.png" alt="Orbitline Exim Office" />
+                </div>
+            </div>
+        </section>
+    <style>
+
+       /* About Us Section Styling */
+.about-us {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 50%;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.btn-about-us {
+    display: inline-block;
+    background-color: #eb0028;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-about-us:hover {
+    background-color: #3b3b3b;
+}
+
+/* Image Section Styling */
+.about-image {
+    flex: 1;
+    max-width: 40%;
+    padding-left: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack content and image on smaller screens */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust text and image width on mobile */
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .about-image {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 20px; /* Add space between text and image */
+    }
+
+    .about-image img {
+        max-width: 80%; /* Adjust image size on smaller screens */
+        margin: 0 auto;
+    }
+
+    .about-content h2 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .btn-about-us {
+        padding: 10px 25px;
+    }
+}
+
+/* Optional: For very small screens */
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+    </style>        
 
         <!-- Service start -->
         <div class="wshipping-content-block">
@@ -292,7 +400,7 @@
                     <div class="col-12 col-lg-6 offset-lg-3">
                         <div class="section-title wow fadeInUp">
                             <h2>Our Services</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                         </div>
                     </div>
                 </div>
@@ -379,6 +487,237 @@
         </div>
         <!-- why choose End -->
 
+        <!-- products  -->
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Our Products</title>
+          <style>
+            /* General Styling */
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f9f9f9;
+            }
+        
+            .container {
+              width: 90%;
+              max-width: 1200px;
+              margin: 0 auto;
+              /* padding: 50px 0; */
+            }
+        
+            h1 {
+              text-align: center;
+              font-size: 2.5rem;
+              margin-bottom: 30px;
+              color: #333;
+            }
+        
+            /* Products Grid */
+            .products-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 20px;
+            }
+        
+            /* Product Card */
+            .product-card {
+              position: relative;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease;
+            }
+        
+            .product-card:hover {
+              transform: translateY(-5px);
+            }
+        
+            .product-image {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+            }
+        
+            .product-details {
+              padding: 20px;
+              text-align: center;
+            }
+        
+            .product-title {
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin-bottom: 10px;
+              color: #333;
+            }
+        
+            .product-description {
+              font-size: 1rem;
+              color: #666;
+              margin-bottom: 20px;
+            }
+        
+            .read-more {
+              color: #d00000;
+              text-decoration: none;
+              font-size: 1rem;
+              font-weight: bold;
+              display: inline-flex;
+              align-items: center;
+              cursor: pointer;
+            }
+        
+            .read-more::after {
+              content: " \25A1"; /* Unicode square symbol */
+              font-size: 1.2rem;
+              margin-left: 5px;
+            }
+        
+            /* Corner Triangle */
+            .corner {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 60px;
+              height: 60px;
+              background-color: #d00000;
+              clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            }
+        
+            /* Modal Styling */
+            .modal {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.6);
+              justify-content: center;
+              align-items: center;
+            }
+        
+            .modal-content {
+              background: #fff;
+              padding: 20px;
+              border-radius: 10px;
+              max-width: 500px;
+              text-align: center;
+              position: relative;
+            }
+        
+            .modal-close {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              font-size: 1.5rem;
+              font-weight: bold;
+              cursor: pointer;
+              color: #d00000;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <h1>Our Products</h1>
+            <div class="products-grid" id="products-grid">
+              <!-- Product cards will be dynamically inserted here -->
+            </div>
+          </div>
+        
+          <!-- Modal for Product Details -->
+          <div class="modal" id="product-modal">
+            <div class="modal-content">
+              <span class="modal-close" id="modal-close">&times;</span>
+              <h3 id="modal-title"></h3>
+              <p id="modal-details"></p>
+            </div>
+          </div>
+        
+          <script>
+            const products = [
+              {
+                id: 1,
+                name: "Premium Spices",
+                description: "High-quality spices sourced from the finest farms, including turmeric, black pepper, and cumin.",
+                details: "Our spices are 100% organic and sourced directly from farmers to ensure the best quality and freshness.",
+                image: "https://hospitalityinsights.ehl.edu/hubfs/1440/1440x960-spices.jpg",
+              },
+              {
+                id: 2,
+                name: "Exotic Fruits",
+                description: "Fresh and exotic fruits for global markets, including mangoes, pineapples, and dragon fruit.",
+                details: "We ensure timely delivery and maintain freshness during transit using state-of-the-art packaging.",
+                image: "https://www.usatoday.com/gcdn/media/2021/05/08/USATODAY/usatsports/imageForEntry35-1sQ.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp",
+              },
+              {
+                id: 3,
+                name: "Textiles",
+                description: "Durable and luxurious fabrics, including cotton, silk, and synthetic blends.",
+                details: "Our textiles are ethically sourced and crafted to meet the highest standards in the fashion industry.",
+                image: "https://textilefocus.com/wp-content/uploads/2016/11/textile-industry-320x200.jpg",
+              },
+            ];
+        
+            const productsGrid = document.getElementById("products-grid");
+            const modal = document.getElementById("product-modal");
+            const modalTitle = document.getElementById("modal-title");
+            const modalDetails = document.getElementById("modal-details");
+            const modalClose = document.getElementById("modal-close");
+        
+            // Render products dynamically
+            products.forEach((product) => {
+              const card = document.createElement("div");
+              card.className = "product-card";
+              card.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="product-image">
+                <div class="product-details">
+                  <h3 class="product-title">${product.name}</h3>
+                  <p class="product-description">${product.description}</p>
+                  <span class="read-more" data-id="${product.id}">READ MORE</span>
+                </div>
+                <div class="corner"></div>
+              `;
+              productsGrid.appendChild(card);
+            });
+        
+            // Show modal with product details
+            productsGrid.addEventListener("click", (event) => {
+              if (event.target.classList.contains("read-more")) {
+                const productId = event.target.getAttribute("data-id");
+                const product = products.find((p) => p.id == productId);
+                if (product) {
+                  modalTitle.textContent = product.name;
+                  modalDetails.textContent = product.details;
+                  modal.style.display = "flex";
+                }
+              }
+            });
+        
+            // Close modal
+            modalClose.addEventListener("click", () => {
+              modal.style.display = "none";
+            });
+        
+            // Close modal on outside click
+            modal.addEventListener("click", (event) => {
+              if (event.target === modal) {
+                modal.style.display = "none";
+              }
+            });
+          </script>
+        </body>
+        </html>
+        
+
+
         <!-- Service process start -->
         <div class="wshipping-content-block service-process">
             <div class="container wow fadeInUp">
@@ -386,7 +725,7 @@
                     <div class="col-12 col-lg-6 offset-lg-3">
                         <div class="section-title">
                             <h2>Our Service Process</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                         </div>
                     </div>
                 </div>
@@ -413,88 +752,9 @@
         <!-- service process start -->
 
         <!-- Get Quote start -->
-        <div class="wshipping-content-block home-quote">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInLeft">
-                        <h2>GET A FREE QUOTE</h2>
-                        <h6>we always use best & fastest fleets</h6>
-                        <div class="quote-form">
-                            <form data-toggle="validator" action="index.html">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input class="form-control" data-error="Please enter name field." id="inputName" placeholder="Full Name" type="text" required />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" required />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="DestinationFrom" placeholder="Destination From" required />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="DestinationTo" placeholder="Destination To" required />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="ShippingType" placeholder="Shipping Type" required />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <div class="form-group">
-                                            <div class="datepicker-group">
-                                                <input type="text" class="form-control datetimepicker1" placeholder="Date" />
-                                                <div class="datepicker-icon"><i class="fa fa-calendar-alt"></i></div>
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control text-area" data-error="Please enter Message." id="textMessage" placeholder="Message" required></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <button class="wshipping-button cta-btn" type="submit">Send us quote</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+  
+
         <!-- Get quote End -->
 
         <!-- Latest blog start -->
@@ -513,7 +773,7 @@
                         <div class="blog-item wow fadeInUp">
                             <div class="blog-item-bg blog-bg-1"></div>
                             <div class="blog-content">
-                                <h3>Shipping container all international transport</h3>
+                                <h3>Ocean Freight Shipping</h3>
                                 <div class="blog-post-by">
                                     <ul>
                                         <li><i class="fa fa-calendar"></i>18 March 2017</li>
@@ -528,7 +788,7 @@
                         <div class="blog-item wow fadeInUp">
                             <div class="blog-item-bg blog-bg-2"></div>
                             <div class="blog-content">
-                                <h3>Lorem Ipsum is simply dummy text of the printing.</h3>
+                                <h3>Car Shipping</h3>
                                 <div class="blog-post-by">
                                     <ul>
                                         <li><i class="fa fa-calendar"></i>18 March 2017</li>
@@ -543,7 +803,7 @@
                         <div class="blog-item wow fadeInUp">
                             <div class="blog-item-bg blog-bg-3"></div>
                             <div class="blog-content">
-                                <h3>All Shipping container are international transport</h3>
+                                <h3> Air Freight Shipping</h3>
                                 <div class="blog-post-by">
                                     <ul>
                                         <li><i class="fa fa-calendar"></i>18 March 2017</li>
@@ -559,6 +819,105 @@
         </div>
         <!-- Latest blog End -->
 
+        <!-- founder  -->
+
+
+  <section class="founders-section">
+    <h2>Founders & Partners</h2>
+    <div class="founders-container">
+      <div class="founder-card">
+        <img src="assets/purv.jpg" alt="Purav Tejani" class="founder-image">
+        <h3>Purav Tejani</h3>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="founder-card">
+        <img src="assets/Hardik.jpg" alt="Hardik Tejani" class="founder-image">
+        <h3>Hardik Tejani</h3>
+        <p>Founder & CTO</p>
+      </div>
+      <div class="founder-card">
+        <img src="assets/Akshar.jpg" alt="Akshar Gabani" class="founder-image">
+        <h3>Akshar Gabani</h3>
+        <p>Founder & COO</p>
+      </div>
+    </div>
+  </section>
+
+<style>
+    /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Founders Section */
+.founders-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.founders-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Container for the Founder Cards */
+.founders-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Founder Card */
+.founder-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.founder-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.founder-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.founder-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .founders-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+
+    
         <!-- Counter start -->
         <div class="wshipping-content-block counter-section">
             <div class="container wow fadeInUp">
